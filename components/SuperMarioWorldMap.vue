@@ -6,7 +6,7 @@
       mapId="911da5329f148e36"
       style="width: 100%; height: 500px"
       :center="center"
-      :zoom="16"
+      :zoom="17"
     >
       <Marker :options="markerOptions" />
     </GoogleMap>
