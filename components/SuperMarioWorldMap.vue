@@ -6,9 +6,9 @@
       mapId="911da5329f148e36"
       style="width: 100%; height: 500px"
       :center="center"
-      :zoom="15"
+      :zoom="16"
     >
-      <Marker :options="{ position: center }" />
+      <Marker :options="markerOptions" />
     </GoogleMap>
   </v-container>
 </template>
@@ -21,7 +21,7 @@ import { GoogleMap, Marker } from "vue3-google-map";
 /***-------VARIAVEIS-------***/
 const center = { lat: 34.667996827004515, lng: 135.4303391005573 };
 const markerOptions = { position: center, label: "L", title: "LADY LIBERTY" };
-/***-------IMPORTS-------***/
+/***-------VARIAVEIS-------***/
 
 /***-------FUNCOES-------***/
 
@@ -39,6 +39,7 @@ const markerOptions = { position: center, label: "L", title: "LADY LIBERTY" };
   margin: 0;
   padding: 0;
   background-color: black;
+  height: 100vh;
 }
 
 h1 {
