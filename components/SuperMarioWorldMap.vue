@@ -9,17 +9,21 @@
       :zoom="17"
     >
       <Marker :options="markerOptions" />
+      <InfoWindow :options="{ position: infoWindowLocation }">
+        Mario World Park
+      </InfoWindow>
     </GoogleMap>
   </v-container>
 </template>
 
 <script setup lang="ts">
 /***-------IMPORTS-------***/
-import { GoogleMap, Marker } from "vue3-google-map";
+import { GoogleMap, Marker, InfoWindow } from "vue3-google-map";
 /***-------IMPORTS-------***/
 
 /***-------VARIAVEIS-------***/
 const center = { lat: 34.667996827004515, lng: 135.4303391005573 };
+const infoWindowLocation = { lat: 34.667996827004515, lng: 135.4303391005673 };
 const markerOptions = { position: center, label: "L", title: "LADY LIBERTY" };
 /***-------VARIAVEIS-------***/
 
